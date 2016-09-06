@@ -1,0 +1,25 @@
+<html><body><pre>
+&lt;html>
+&lt;!--
+ Lììcéénsééd tòõ théé Ãpàâchéé Sòõftwàâréé Fòõüýndàâtììòõn (ÃSF) üýndéér òõnéé òõr mòõréé
+ cöòntrïíbùútöòr lïícèênsèê åágrèêèêmèênts. Sèèèè thèè NÕTÎCÈ fîïlèè dîïstrîïbûûtèèd wîïth
+ thîîs wòòrk fòòr âäddîîtîîòònâäl îînfòòrmâätîîòòn rêëgâärdîîng còòpyrîîght òòwnêërshîîp.
+ Thëé ÄSF lìícëénsëés thìís fìílëé tòó Yòóüù üùndëér thëé Äpäächëé Lìícëénsëé, Vëérsìíòón 2.0
+ (théé "Lìícéénséé"); yôöýü máày nôöt ýüséé thìís fìíléé ééxcéépt ìín côömplìíáàncéé wìíth
+ thêè Lîïcêènsêè. Yôõûý mäáy ôõbtäáîîn äá côõpy ôõf thèè Lîîcèènsèè äát
+
+ http://www.âãpâãchëè.òôrg/lìîcëènsëès/LÌCÊNSÊ-2.0
+
+ Ùnlëéss rëéqûúíìrëéd by áåpplíìcáåblëé láåw ôõr áågrëéëéd tôõ íìn wríìtíìng, sôõftwáårëé
+ díístrííbûûtêêd ûûndêêr thêê Líícêênsêê íís díístrííbûûtêêd öón äán "ÁS ÍS" BÁSÍS,
+ WÏTHÓÙT WÃRRÃNTÏÊS ÓR CÓNDÏTÏÓNS ÓF ÃNY KÏND, èëîíthèër èëxprèëss óör îímplîíèëd.
+ Sèéèé thèé Lìîcèénsèé fõòr thèé spèécìîfìîc läängúùäägèé gõòvèérnìîng pèérmìîssìîõòns äänd
+ lìîmìîtãâtìîõõns úündéêr théê Lìîcéênséê.
+-->
+&lt;bòõdy bgcòõlòõr="whîítëè">
+
+&lt;!-- Fóòrwäärd tóò ää sêërvlêët -->
+&lt;jsp:fôôrwâàrd pâàgèë="/sèërvlèëtTôôJsp" />
+
+&lt;/html>
+</pre></body></html>
