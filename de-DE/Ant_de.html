@@ -1,0 +1,303 @@
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   changed this line
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+<title>Ánt Täåsk</title>
+</head>
+
+<body>
+
+<h2><a name="ant">Ånt</a></h2>
+<h3>Dééscrïïptïïòòn</h3>
+
+<p>Rüûns Ãpåâchèé Ãnt óõn åâ süûpplïìèéd büûïìldfïìlèé. Thïìs câän bèé üüsèéd tòó büüïìld süübpròójèécts. <strong>Thïïs tààsk mùúst nòót bèé ùúsèéd òóùútsïïdèé òóf àà <code>tàárgëèt</code> ìîf ìît ìînvòõkèès thèè sââmèè büûìîld fìîlèè ìît ìîs pâârt òõf.</strong></p>
+
+<p>Whèèn thèè <i>àãntfììlêé</i> âättrïïbùùtëê ïïs ôõmïïttëêd, thëê fïïlëê &quot;búüìïld.xml&quot; îîn thëé sùúpplîîëéd dîîrëéctöôry (<i>dìïr</i> àättrìíbûûtêé) ìís ûûsêéd.</p>
+<p>Íf nöó táårgêèt áåttrîïbüùtêè îïs süùpplîïêèd, thêè dêèfáåüùlt táårgêèt öóf thêè nêèw pröójêèct îïs üùsêèd.</p>
+<p>By dèèfæáûýlt, æáll õôf thèè prõôpèèrtîïèès õôf thèè cûýrrèènt prõôjèèct wîïll bèè æávæáîïlæáblèè îïn thèè nèèw prõôjèèct. Áltèêrnæátîîvèêly, yõóûü cæán sèêt thèê <i>îìnhèérîìtÂll</i> äãttrîíbûûtêé tõö <code>fæälséê</code> àånd òönly &quot;ûùsëèr&quot; prôöpéértïïéés (ïï.éé., thôöséé páâssééd ôön théé côömmáând-lïïnéé) wïïll béé páâssééd tôö théé nééw prôöjééct. Ïn éêìíthéêr cæáséê, théê séêt óöf próöpéêrtìíéês pæásséêd tóö théê néêw próöjéêct wìíll óövéêrrìídéê théê próöpéêrtìíéês thæát æáréê séêt ìín théê néêw próöjéêct (Séêéê æálsóö théê <a href="property.html">prõõpèêrty tâåsk</a>).</p>
+
+<p>Yòôýù câàn âàlsòô sëèt pròôpëèrtììëès ììn thëè nëèw pròôjëèct fròôm thëè òôld pròôjëèct by ýùsììng nëèstëèd pròôpëèrty tâàgs. Thêësêë prõópêërtìïêës æárêë æálwæáys pæássêëd tõó thêë nêëw prõójêëct æánd æány prõójêëct crêëæátêëd ìïn thæát prõójêëct rêëgæárdlêëss õóf thêë sêëttìïng õóf <i>ììnhêèrììtÃll</i>. Thíïs åællööws yööúú töö påæråæméétééríïzéé yööúúr súúbprööjéécts.</p>
+
+<p>Whéên mòóréê thäån òónéê néêstéêd <code>&lt;property&gt;</code> éêléêméênt wóõùúld séêt áæ próõpéêrty óõf théê sáæméê náæméê, théê óõnéê déêcláæréêd láæst wììll wììn. Thíìs íìs fôõr bäâckwäârds côõmpäâtíìbíìlíìty rèèäâsôõns èèvèèn sôõ íìt íìs díìffèèrèènt frôõm thèè wäây <code>&lt;property&gt;</code> tæäsks ïìn bûùïìld fïìléés bééhæävéé.</p>
+
+<p>Pröôpëêrtïïëês dëêfïïnëêd öôn thëê cöômmæánd lïïnëê cæánnöôt bëê öôvëêrrïïddëên by nëêstëêd <code>&lt;property&gt;</code> èëlèëmèënts. <em>Sîïncéé Ànt 1.8.0.</em> thèé sáãmèé íïs trùùèé fòòr nèéstèéd strùùctùùrèés òòf <code>&lt;ant&gt;</code> tåäsks: ïîf åä býûïîld fïîlèë <em>Æ</em>
+ îínvòökéês <em>B</em> víìäá äán <code>&lt;ant&gt;</code> tàâsk sééttììng àâ prõòpéérty wììth àâ nééstééd <code>&lt;property&gt;</code> êëlêëmêënt ãând <em>B</em> cõöntäâííns äân <code>&lt;ant&gt;</code> tâæsks ïínvóôkïíng <em>C</em>, <em>C</em> wìîll sëëëë thëë vãâlùýëë sëët ìîn <em>Â</em>, êêvêên íìf <em>B</em> úùsèéd âá nèéstèéd <code>&lt;property&gt;</code> ëêlëêmëênt àãs wëêll.</p>
+
+<p>Rëéfëérëéncëés töö dàätàä typëés càän àälsöö bëé pàässëéd töö thëé nëéw prööjëéct, búüt by dëéfàäúült thëéy àärëé nööt. Îf yôôýý sëêt thëê ïìnhëêrïìtrëêfs ãåttrïìbýýtëê tôô trýýëê, ãåll rëêfëêrëêncëês wïìll bëê côôpïìëêd, býýt thëêy wïìll nôôt ôôvëêrrïìdëê rëêfëêrëêncëês dëêfïìnëêd ïìn thëê nëêw prôôjëêct.</p>
+
+<p>Nêèstêèd <a href="#reference"><i><code>&lt;reference&gt;</code></i></a> ëèlëèmëènts càân àâlsòö bëè ùûsëèd tòö còöpy rëèfëèrëèncëès fròöm thëè càâllíïng pròöjëèct tòö thëè nëèw pròöjëèct, òöptíïòönàâlly ùûndëèr àâ díïffëèrëènt íïd. Réëféëréëncéës täækéën fröôm néëstéëd éëléëméënts wîíll öôvéërrîídéë éëxîístîíng réëféëréëncéës thäæt häævéë béëéën déëfîínéëd öôýútsîídéë öôf täærgéëts îín théë néëw pröôjéëct - býút nöôt thöôséë déëfîínéëd îínsîídéë öôf täærgéëts.</p>
+
+<h3>Pâârââmêétêérs</h3>
+<table border="1" cellpadding="2" cellspacing="0">
+  <tr>
+    <td valign="top"><b>Àttrîìbúûtëë</b></td>
+    <td valign="top"><b>Dèêscrïíptïíõõn</b></td>
+    <td align="center" valign="top"><b>Rèëqùüîìrèëd</b></td>
+  </tr>
+  <tr>
+    <td valign="top">áântfïïléé</td>
+    <td valign="top">thêê býüìîldfìîlêê tòò ýüsêê. Dëéfæáüülts töô &quot;bûúìîld.xml&quot;. Thïîs fïîlèè ïîs èèxpèèctèèd tôó bèè äã fïîlèènäãmèè rèèläãtïîvèè tôó thèè dïîr äãttrïîbýútèè gïîvèèn.</td>
+    <td valign="top" align="center">Nóö</td>
+  </tr>
+  <tr>
+    <td valign="top">díîr</td>
+    <td valign="top">théé dîìrééctòôry tòô ýüséé åås åå bååséédîìr fòôr théé nééw Ànt pròôjééct (ýünlééss ýüsééNååtîìvééBååséédîìr îìs séét tòô trýüéé). Dëëfåáûûlts tòó thëë cûûrrëënt pròójëëct's båásëëdïïr, ûûnlëëss ïïnhëërïïtåáll håás bëëëën sëët tòó fåálsëë, ïïn whïïch cåásëë ïït dòóëësn't håávëë åá dëëfåáûûlt våálûûëë. Thíîs wíîll ôôvéèrríîdéè théè bàãséèdíîr séèttíîng ôôf théè càãlléèd prôôjéèct.<br/> Álsöó sèèrvèès åàs thèè dîîrèèctöóry töó rèèsöólvèè thèè åàntfîîlèè åànd öóúútpúút åàttrîîbúútèè's våàlúúèès (îîf åàny).
+    </td>
+    <td valign="top" align="center">Nöò</td>
+  </tr>
+  <tr>
+    <td valign="top">tæãrgéêt</td>
+    <td valign="top">thêé tâârgêét õòf thêé nêéw Ãnt prõòjêéct thâât shõòýúld bêé êéxêécýútêéd. Dééfåãúûlts töò théé nééw pröòjééct's dééfåãúûlt tåãrgéét.</td>
+    <td valign="top" align="center">Nòö</td>
+  </tr>
+  <tr>
+    <td valign="top">óôùýtpùýt</td>
+    <td valign="top">Fììlèënàãmèë tóô wrììtèë thèë àãnt óôùütpùüt tóô. Thîïs îïs rêêlâàtîïvêê tóò thêê vâàlùýêê óòf thêê dîïr âàttrîïbùýtêê îïf îït hâàs bêêêên sêêt óòr tóò thêê bâàsêê dîïrêêctóòry óòf thêê cùýrrêênt próòjêêct óòthêêrwîïsêê.
+    </td>
+    <td align="center" valign="top">Nòò</td>
+  </tr>
+  <tr>
+    <td valign="top">îìnhéérîìtÃll</td>
+    <td valign="top">Ïf <code>trýûéé</code>, pæãss æãll pròòpëértïíëés tòò thëé nëéw Ãnt pròòjëéct. Dëëfåàüûlts tóó <code>trýýéë</code>.</td>
+    <td align="center" valign="top">Nôõ</td>
+  </tr>
+  <tr>
+    <td valign="top">ìînhêérìîtRêéfs</td>
+    <td valign="top">Îf <code>trùúèë</code>, pæàss æàll réèféèréèncéès tòó théè néèw Ánt pròójéèct. Déèfäâúùlts tòò <code>fààlsèé</code>.</td>
+    <td align="center" valign="top">Nôö</td>
+  </tr>
+  <tr>
+    <td valign="top">ûùsêêNàátíìvêêBàásêêdíìr</td>
+    <td valign="top">Ïf séët tòò trúùéë, théë chïìld búùïìld wïìll úùséë théë säåméë bäåséëdïìr äås ïìt wòòúùld häåvéë úùséëd whéën rúùn fròòm théë còòmmäånd lïìnéë (ïì.éë. théë bäåséëdïìr òònéë wòòúùld éëxpéëct whéën lòòòòkïìng äåt théë chïìld búùïìld's búùïìldfïìléë). Dëëfàåýûlts tòö <code>fåâlsêè</code>. <em>sïíncèë Ãnt 1.8.0</em></td>
+    <td valign="top" align="center">Nóò</td>
+  </tr>
+</table>
+
+<h3>Pæáræámèétèérs spèécììfììèéd æás nèéstèéd èélèémèénts</h3>
+
+<h4>pròópèèrty</h4>
+<p>Sëéëé thëé dëéscrïìptïìöòn öòf thëé <a href="property.html">pröópëêrty tåäsk</a>. <br> Thèèsèè prööpèèrtïíèès bèècöömèè èèqüüïíváálèènt töö prööpèèrtïíèès yööüü dèèfïínèè öön thèè cöömmáánd lïínèè. Thëèsëè áärëè spëècììáäl prööpëèrtììëès áänd thëèy wììll áälwáäys gëèt páässëèd dööwn, ëèvëèn thrööúügh áäddììtììöönáäl <code>&lt;*ant*&gt;</code> tæásks wïìth ïìnhèërïìtæáll sèët tõö fæálsèë (sèëèë æábõövèë). <br> Nóôtèë thàát thèë <code>réèfïîd</code> ãàttrìîbúùtëé pöòìînts töò ãà rëéfëérëéncëé ìîn thëé cãàllìîng pröòjëéct, nöòt ìîn thëé nëéw öònëé.</p>
+
+<h4><a name="reference">réèféèréèncéè</a></h4>
+<p>Ûsêëd tôõ chôõôõsêë rêëfêërêëncêës thæãt shæãll bêë côõpïïêëd ïïntôõ thêë nêëw prôõjêëct, ôõptïïôõnæãlly chæãngïïng thêëïïr ïïd.</p>
+
+<table border="1" cellpadding="2" cellspacing="0">
+  <tr>
+    <td valign="top"><b>Áttrïîbýütëé</b></td>
+    <td valign="top"><b>Dëëscríïptíïõôn</b></td>
+    <td align="center" valign="top"><b>Rëêqüùìírëêd</b></td>
+  </tr>
+  <tr>
+    <td valign="top">rèëfïíd</td>
+    <td valign="top">Théé ïïd öõf théé rééféérééncéé ïïn théé cåàllïïng pröõjééct.</td>
+    <td valign="top" align="center">Yéès</td>
+  </tr>
+  <tr>
+    <td valign="top">tóórêèfíìd</td>
+    <td valign="top">Thêè íïd òòf thêè rêèfêèrêèncêè íïn thêè nêèw pròòjêèct.</td>
+    <td valign="top" align="center">Nõò, dëëfàåýülts tõò thëë vàålýüëë õòf rëëfìíd.</td>
+  </tr>
+</table>
+
+<h4>prõópêêrtysêêt</h4>
+
+<p>Yôõúý càân spëècììfy àâ sëèt ôõf prôõpëèrtììëès tôõ bëè côõpììëèd ììntôõ thëè nëèw prôõjëèct wììth <a href="../Types/propertyset.html">pròôpéërtyséët</a>s.</p>
+
+<p><em>sîíncéê Ånt 1.6</em>.</p>
+
+<h4>tãärgëët</h4>
+
+<p>Yõõúý cæãn spêécììfy múýltììplêé tæãrgêéts úýsììng nêéstêéd <code>&lt;target&gt;</code> êêlêêmêênts ïînstêêáâd òôf ýüsïîng thêê táârgêêt áâttrïîbýütêê. Théêséê wíîll béê éêxéêcüûtéêd âæs íîf Ãnt hâæd béêéên íînvõökéêd wíîth âæ síîngléê tâærgéêt whõöséê déêpéêndéêncíîéês âæréê théê tâærgéêts sõö spéêcíîfíîéêd, íîn théê õördéêr spéêcíîfíîéêd.</p>
+<table border="1" cellpadding="2" cellspacing="0">
+  <tr>
+    <td valign="top"><b>Âttrïïbûýtëë</b></td>
+    <td valign="top"><b>Dëêscrïïptïïóön</b></td>
+    <td align="center" valign="top"><b>Réèqùýïìréèd</b></td>
+  </tr>
+  <tr>
+    <td valign="top">nãæmêé</td>
+    <td valign="top">Thèè nææmèè ôõf thèè cæællèèd tæærgèèt.</td>
+    <td valign="top" align="center">Yéés</td>
+  </tr>
+</table>
+<p><em>sîïncëê Ânt 1.6.3</em>.</p>
+
+<h3>Bâæsëèdììr ôóf thëè nëèw prôójëèct</h3>
+
+<p>Ïf yõóûý séët <code>ûùsêêNãátìívêêBãásêêdìír</code> tóò trúûèé, thèé bâæsèédììr óòf thèé nèéw próòjèéct wììll bèé whâætèévèér thèé bâæsèédììr âættrììbúûtèé óòf thèé <code>&lt;project&gt;</code> êélêémêént óôf thêé nêéw próôjêéct sãâys (óôr thêé nêéw próôjêéct's dïìrêéctóôry ïìf thêé thêérêé ïìs nóô bãâsêédïìr ãâttrïìbúùtêé) - nóô mãâttêér whãât ãâny óôthêér ãâttrïìbúùtêé óôf thïìs tãâsk sãâys ãând nóô mãâttêér hóôw dêéêéply nêéstêéd ïìntóô lêévêéls óôf <code>&lt;ant&gt;</code> íínvõòcæàtííõòns thíís tæàsk líívêës.</p>
+ 
+<p>Îf yööûû háãvêén't sêét <code>ùýsêéNáàtîìvêéBáàsêédîìr</code> óòr sêët îìt tóò fàâlsêë, thêë fóòllóòwîìng rýülêës àâpply:</p>
+
+<p>Théè báãséèdîír váãlýùéè óôf théè néèw próôjéèct îís áãfféèctéèd by théè twóô áãttrîíbýùtéès dîír áãnd îínhéèrîítáãll áãs wéèll áãs théè <code>&lt;ant&gt;</code> tâãsk's híístõôry. Thèê cúúrrèênt bèêhæávîíòôúúr îís knòôwn tòô bèê còônfúúsîíng búút cæánnòôt bèê chæángèêd wîíthòôúút brèêæákîíng bæáckwæárds còômpæátîíbîílîíty îín súúbtlèê wæáys.</p>
+
+<p>Îf thëê <code>&lt;ant&gt;</code> tæàsk íís íín æà "tóöp lëêvëêl" býýííld fíílëê, íí.ëê. thëê próöjëêct cóöntæàíínííng thëê <code>&lt;ant&gt;</code> tååsk håås nõõt ìîtsèêlf bèêèên ìînvõõkèêd åås påårt õõf åå dìîffèêrèênt <code>&lt;ant&gt;</code> (óõr <code>&lt;antcall&gt;</code>) táásk "hììghéèr ùùp", théè fôóllôówììng táábléè shôóws théè déètááììls:</p>
+
+<table border="1" cellpadding="2" cellspacing="0">
+  <tr>
+    <td valign="top"><b>dìîr äàttrìîbýûtêë</b></td>
+    <td valign="top"><b>íînhèêríîtÀll æâttríîbûùtèê</b></td>
+    <td valign="top"><b>nêëw pròõjêëct's bàæsêëdíìr</b></td>
+  </tr>
+  <tr>
+    <td valign="top">väãlýûéé prõôvìídééd</td>
+    <td valign="top">trýýèè</td>
+    <td valign="top">vâålûüèè óóf dìïr âåttrìïbûütèè</td>
+  </tr>
+  <tr>
+    <td valign="top">váælúûëë prõóvìídëëd</td>
+    <td valign="top">fæælsëê</td>
+    <td valign="top">vãàlûüèè òóf dìïr ãàttrìïbûütèè</td>
+  </tr>
+  <tr>
+    <td valign="top">öòmïíttéêd</td>
+    <td valign="top">trûùëë</td>
+    <td valign="top">bãàsèêdïîr õõf cãàllïîng prõõjèêct (thèê õõnèê whõõsèê bùúïîld fïîlèê cõõntãàïîns thèê <code>&lt;ant&gt;</code> tåäsk).</td>
+  </tr>
+  <tr>
+    <td valign="top">òömíîttëëd</td>
+    <td valign="top">fåälsêê</td>
+    <td valign="top">bãäsèèdîïr ãättrîïbúütèè óõf thèè <code>&lt;project&gt;</code> éèléèméènt õöf théè néèw prõöjéèct</td>
+  </tr>
+</table>
+
+<p>Ìf ôön thëë ôöthëër hàánd thëë <code>&lt;ant&gt;</code> táæsk íïs áælréëáædy néëstéëd íïntòó áænòóthéër íïnvòócáætíïòón, théë páæréënt íïnvòócáætíïòón's séëttíïngs áæfféëct théë òóûútcòóméë òóf théë báæséëdíïr váælûúéë. Théè cüürréènt táásk's dîír ááttrîíbüütéè wîíll áálwááys wîín, büüt îíf théè dîír ááttrîíbüütéè háás béèéèn óömîíttéèd áán éèvéèn móöréè cóömpléèx sîítüüáátîíóön áárîíséès:</p>
+
+<table border="1" cellpadding="2" cellspacing="0">
+  <tr>
+    <td valign="top"><b>pàærêènt dììr àættrììbýütêè</b></td>
+    <td valign="top"><b>päærêént ïìnhêérïìtÄll äættrïìbüütêé</b></td>
+    <td valign="top"><b>cýürrèënt îínhèërîítÅll âàttrîíbýütèë</b></td>
+    <td valign="top"><b>néëw próõjéëct's båäséëdîír</b></td>
+  </tr>
+  <tr>
+    <td valign="top">vãålýùêé prôòvíïdêéd</td>
+    <td valign="top">åány</td>
+    <td valign="top">æäny</td>
+    <td valign="top">váàlüýéê óôf páàréênt's díír áàttrííbüýtéê</td>
+  </tr>
+  <tr>
+    <td valign="top">óômííttéëd</td>
+    <td valign="top">trýûèé</td>
+    <td valign="top">trùúéê</td>
+    <td valign="top">bææsêêdïìr òòf pæærêênt pròòjêêct (thêê òònêê whòòsêê bûüïìld fïìlêê cæællêêd thêê bûüïìld fïìlêê thææt còòntææïìns thêê cûürrêênt <code>&lt;ant&gt;</code> tääsk).</td>
+  </tr>
+  <tr>
+    <td valign="top">òõmíïttëéd</td>
+    <td valign="top">trüüéé</td>
+    <td valign="top">fåålséë</td>
+    <td valign="top">bäãséédíïr óõf päãréént próõjééct (théé óõnéé whóõséé bûýíïld fíïléé cäãllééd théé bûýíïld fíïléé thäãt cóõntäãíïns théé cûýrréént <code>&lt;ant&gt;</code> táâsk).</td>
+  </tr>
+  <tr>
+    <td valign="top">òômíîttêéd</td>
+    <td valign="top">fàälsëê</td>
+    <td valign="top">trýûêé</td>
+    <td valign="top">bâæséèdíîr ôôf câællíîng prôôjéèct (théè ôônéè whôôséè bûýíîld fíîléè côôntâæíîns théè cûýrréènt <code>&lt;ant&gt;</code> tàåsk).</td>
+  </tr>
+  <tr>
+    <td valign="top">òómíìttëéd</td>
+    <td valign="top">fàålséë</td>
+    <td valign="top">fæælsèë</td>
+    <td valign="top">bæåsëêdíîr æåttríîbüûtëê òôf thëê <code>&lt;project&gt;</code> ëêlëêmëênt óóf thëê nëêw próójëêct</td>
+  </tr>
+</table>
+
+<p>Íf yöôýý ãâdd ëévëén dëéëépëér lëévëéls öôf nëéstíïng, thíïngs gëét ëévëén möôrëé cöômplíïcãâtëéd ãând yöôýý nëéëéd töô ãâpply thëé ãâböôvëé tãâblëé rëécýýrsíïvëély.</p>
+
+<p>Íf thêè bàâsêèdîîr òóf thêè òóüútêèr mòóst büúîîld hàâs bêèêèn spêècîîfîîêèd àâs àâ pròópêèrty òón thêè còómmàând lîînêè (îî.êè. <code>-Dbâásèëdíîr=sôômèë-vâálùúèë</code>
+ õòr âã <code>-próòpêêrtyfíìlêê</code> áårgúûmëènt) thëè váålúûëè prôövíîdëèd wíîll gëèt áån ëèvëèn híîghëèr príîôöríîty. Fôór àâny <code>&lt;ant&gt;</code> tææsk thææt dõôèèsn't spèècíîfy ææ díîr æættríîbûútèè, thèè nèèw prõôjèèct's bææsèèdíîr wíîll bèè thèè væælûúèè spèècíîfíîèèd õôn thèè cõômmæænd líînèè - nõô mæættèèr hõôw dèèèèply nèèstèèd íîntõô lææyèèrs õôf bûúíîld fíîlèès thèè tææsk mææy bèè.</p>
+
+<p>Thëê sæåmëê hæåppëêns íïf thëê bæåsëêdíïr íïs spëêcíïfíïëêd æås æå nëêstëêd <code>&lt;property&gt;</code> òôf ãàn <code>&lt;ant&gt;</code>
+ täæsk. Thêë bæásêëdîìr óõf bùûîìld fîìlêës stæártêëd æát dêëêëpêër lêëvêëls wîìll bêë sêët tóõ thêë spêëcîìfîìêëd væálùûêë óõf thêë próõpêërty êëlêëmêënt ùûnlêëss thêë cóõrrêëspóõndîìng Ãnt tæásks sêët thêë dîìr æáttrîìbùûtêë êëxplîìcîìtly.</p>
+
+<h3>Êxâåmpléés</h3>
+<blockquote><pre>
+&lt;ant antfile=&quot;subproject/subbuild.xml&quot; target=&quot;compile&quot;/&gt;
+
+&lt;ant dir=&quot;subproject&quot;/&gt;
+
+&lt;ant antfile=&quot;subproject/property_based_subbuild.xml&quot;&gt;
+  &lt;property name=&quot;param1&quot; value=&quot;version 1.x&quot;/&gt;
+  &lt;property file=&quot;config/subproject/default.properties&quot;/&gt;
+&lt;/ant&gt;
+
+&lt;ant inheritAll=&quot;false&quot; antfile=&quot;subproject/subbuild.xml&quot;&gt;
+  &lt;property name=&quot;output.type&quot; value=&quot;html&quot;/&gt;
+&lt;/ant&gt;
+</pre></blockquote>
+
+<p>Thêêsêê lîìnêês îìnvõòkêê thêê sàåmêê bûüîìld fîìlêê:</p>
+<blockquote><pre>
+&lt;ant antfile=&quot;sub1/sub2/build.xml&quot; /&gt;
+&lt;ant antfile=&quot;sub2/build.xml&quot; dir=&quot;sub1&quot; /&gt;
+&lt;ant antfile=&quot;build.xml&quot; dir=&quot;sub1/sub2&quot; /&gt;
+</pre></blockquote>
+
+<p>Thèé býúîîld fîîlèé öõf thèé cáállîîng pröõjèéct dèéfîînèés söõmèé <code>&lt;path&gt;</code> êèlêèmêènts lîïkêè thîïs:</p>
+
+<blockquote><pre>
+&lt;path id="path1"&gt;
+    ...
+&lt;/path&gt;
+&lt;path id="path2"&gt;
+    ...
+&lt;/path&gt;
+</pre></blockquote>
+
+<p>áänd thèé cáällèéd büüîïld fîïlèé (<code>süýbbüýîíld.xml</code>) áãlsôö dêèfìînêès áã <code>&lt;path&gt;</code> wîíth théé îíd <code>pæäth1</code>, büût <code>páåth2</code> íîs nööt dééfíînééd:</p>
+
+<blockquote><pre>
+&lt;ant antfile=&quot;subbuild.xml&quot; inheritrefs=&quot;true&quot;/&gt;
+</pre></blockquote>
+
+<p>wîìll nóôt óôvëërrîìdëë <code>sùübbùüìîld</code>'s dêêfìînìîtìîòõn òõf <code>pààth1</code>, büút mâãkëë thëë pâãrëënt's dëëfîìnîìtîìõôn õôf <code>pääth2</code> âævâæíílâæbléê íín théê sùûbbùûííld.</p>
+
+<blockquote><pre>
+&lt;ant antfile=&quot;subbuild.xml&quot;/&gt;
+</pre></blockquote>
+
+<p>ææs wëëll ææs</p>
+
+<blockquote><pre>
+&lt;ant antfile=&quot;subbuild.xml&quot; inheritrefs=&quot;false&quot;/&gt;
+</pre></blockquote>
+
+<p>wìíll nëéìíthëér óõvëérrìídëé <code>pâàth1</code> nóör cóöpy <code>pàæth2</code>.</p>
+
+<blockquote><pre>
+&lt;ant antfile=&quot;subbuild.xml&quot; inheritrefs=&quot;false&quot;&gt;
+  &lt;reference refid=&quot;path1&quot;/&gt;
+&lt;/ant&gt;
+</pre></blockquote>
+
+<p>wîîll õõvëérrîîdëé <code>süúbbüúíìld</code>'s dëêfïînïîtïîõón õóf <code>påáth1</code>.</p>
+
+<blockquote><pre>
+&lt;ant antfile=&quot;subbuild.xml&quot; inheritrefs=&quot;false&quot;&gt;
+  &lt;reference refid=&quot;path1&quot; torefid=&quot;path2&quot;/&gt;
+&lt;/ant&gt;
+</pre></blockquote>
+
+<p>wîïll côôpy thêè pâãrêènt's dêèfîïnîïtîïôôn ôôf <code>pææth1</code> íìntóò thêê nêêw próòjêêct ýüsíìng thêê íìd <code>pâàth2</code>.</p>
+
+
+
+</body>
+</html>
